@@ -8,10 +8,8 @@
 #include "modbus_config.h"
 #include "wifi_config.h"
 
-
-void onDataReceive(MeterSensor meter){
-  // handle hear
-
+void onData(MeterSensor meter){
+  
 }
 
 void setup() {
@@ -24,7 +22,7 @@ void setup() {
   M5.Lcd.setCursor(0, 10);
   M5.Lcd.setTextColor(WHITE);
   M5.Lcd.setTextSize(1);
-  modbusSetup(onDataReceive);
+  modbusSetup(onData);
 }
 
 void loop() {
@@ -40,10 +38,3 @@ void loop() {
     sendCode(); 
   }
 }
-
-
-
-
-
-
-

@@ -4,10 +4,10 @@
 #include "Arduino.h"
 
 #define ADDR_VOLTAGE_LN                     0x0000
-#define ADDR_VOLTAGE_LN_LENGTH              3       // 3 address but size is word
+#define ADDR_VOLTAGE_LN_LENGTH              3       // length * size of word = 3 * 2 = 6 byte
 
 #define ADDR_CURRENT_LN                     0x0003
-#define ADDR_CURRENT_LN_LENGTH              3
+#define ADDR_CURRENT_LN_LENGTH              3       // 6 byte
 
 #define ADDR_TOTAL_CURRENT                  0x0006
 #define ADDR_TOTAL_CURRENT_LENGTH           1
